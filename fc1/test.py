@@ -7,9 +7,9 @@ from phd_student_factory_impl import PhdStudentFactoryImpl
 class Test:
     affair = StudentAffairs()
 
-    student_factory = StudentFactoryImpl(1, "Gözde")
-    master_student_factory = MasterStudentFactoryImpl(2, "İlhan", "Psychology")
-    phd_student_factory = PhdStudentFactoryImpl(3, "Hülya", "Art", 4)
+    student_factory = StudentFactoryImpl()
+    master_student_factory = MasterStudentFactoryImpl()
+    phd_student_factory = PhdStudentFactoryImpl()
 
     affair.add_new_students(student_factory.create(2, "Ali"))
     affair.add_new_students(student_factory.create(3, "Ayşe"))
